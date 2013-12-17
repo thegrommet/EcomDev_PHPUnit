@@ -118,7 +118,7 @@ class EcomDev_PHPUnit_Model_Config extends Mage_Core_Model_Config
      */
     public function getModelInstance($modelClass='', $constructArguments=array())
     {
-		$modelClass = (string)$modelClass;
+        $modelClass = (string)$modelClass;
         if (!isset($this->_replaceInstanceCreation['model'][$modelClass])) {
             return parent::getModelInstance($modelClass, $constructArguments);
         }
@@ -134,7 +134,7 @@ class EcomDev_PHPUnit_Model_Config extends Mage_Core_Model_Config
      */
     public function getResourceModelInstance($modelClass='', $constructArguments=array())
     {
-		$modelClass = (string)$modelClass;
+        $modelClass = (string)$modelClass;
         if (!isset($this->_replaceInstanceCreation['resource_model'][$modelClass])) {
             return parent::getResourceModelInstance($modelClass, $constructArguments);
         }
